@@ -11,7 +11,7 @@ module immediate_assertion(clk, a, b, c, d);
 
 	always @(posedge clk)begin
 		if (a) begin
-			@(posedge d); //wait for posedge of d
+			@(d); //wait for posedge of d
 			aORb : assert (b || c) $display($stime,"%m assert passed\n");
 			else 
 				$warning($stime,"%m assert failed");

@@ -8,11 +8,11 @@
 
 // Remove comment for the timescale you want to test.
 
-`timescale 1ps/1ps
+//`timescale 1ps/1ps
 //`timescale 1ns/1ps
 //`timescale 100ns/1ns
 //`timescale 1ms/1us
-//`timescale 10ms/10ns
+`timescale 10ms/10ns
 
 module timescale_check;
 
@@ -32,7 +32,7 @@ module timescale_check;
 	// Print the timescale under use
 	$printtimescale($root.timescale_check);
 	// Print out any changes in rval
- 	$monitor("Time=%0t, rval = %d\n",$realtime,rval );
+ 	$monitor("Time=%0t, rval = %d\n",$stime,rval );
 	#100 $finish;
  end
 

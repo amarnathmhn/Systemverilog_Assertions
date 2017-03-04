@@ -1,0 +1,11 @@
+vunit cds_psl1 (Design) {
+(*cds_generated_bind_instance*)
+`line 51 "./concurrent_assertions_bind_property.sv" 0
+concurrent_assertion ca (
+.clk(dclk), 
+.cStart(dcStart), 
+.req(dreq), 
+.gnt(dgnt));
+
+}
+

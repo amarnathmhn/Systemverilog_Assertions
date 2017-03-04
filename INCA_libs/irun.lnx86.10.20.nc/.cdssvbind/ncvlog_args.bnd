@@ -1,0 +1,19 @@
+-MSS\ 
+-dumpxst\ 
+Design_0x7f599534\ 
+-LOG_FD\ 
+4\ 
+-propfile\ 
+./INCA_libs/irun.lnx86.10.20.nc/.cdssvbind/cds_tmp_svbind_single_000016ba_007f0100_1.sva\ 
+-neverwarn\ 
+-reduce_messages\ 
+-nocopyright\ 
+-specificunit\ 
+worklib.Design:sv\ 
+-SV\ 
+-cdslib\ 
+./INCA_libs/irun.lnx86.10.20.nc/cds.lib\ 
+-hdlvar\ 
+./INCA_libs/irun.lnx86.10.20.nc/hdl.var\ 
+-runmode\ 
+/home/grads/a/amarnathmhn/interviewPrep/Systemverilog_Assertions/concurrent_assertions_bind_property.sv \ 

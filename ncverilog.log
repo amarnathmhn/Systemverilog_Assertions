@@ -1,0 +1,57 @@
+ncverilog: 10.20-s073: (c) Copyright 1995-2011 Cadence Design Systems, Inc.
+TOOL:	ncverilog	10.20-s073: Started on Mar 03, 2017 at 19:18:40 CST
+ncverilog
+	-access
+	+rwc
+	-sv
+	concurrent_assertions_bind_property.sv
+	-gui
+file: concurrent_assertions_bind_property.sv
+	module worklib.tb:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Building instance overlay tables: ....................
+	else $fatal("%m assertion failed");
+	                                |
+ncelab: *W,STRINT (./concurrent_assertions_bind_property.sv,32|33): String literal argument supplied to integer parameter.
+ Done
+	Generating native compiled code:
+		worklib.Design:sv <0x00844c5f>
+			streams:   2, words:   204
+		worklib.concurrent_assertion:sv <0x0f816d01>
+			streams:   6, words:  4407
+		worklib.tb:sv <0x335262fb>
+			streams:   4, words:  3036
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  3       4
+		Registers:               10      12
+		Scalar wires:             4       -
+		Named events:             2       2
+		Always blocks:            5       5
+		Initial blocks:           2       2
+		Clocking blocks:          1       1
+		Pseudo assignments:       4       4
+		Assertions:               1       1
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.tb:sv
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /softwares/Linux/cadence/INCISIV102/tools/inca/files/ncsimrc
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm tb.d.dcStart tb.d.dclk tb.d.dgnt tb.d.dreq
+Created probe 1
+ncsim> run
+350tb.d.ca assertion passed 
+Simulation complete via $finish(1) at time 5210 NS + 0
+./concurrent_assertions_bind_property.sv:73 		$finish;
+ncsim> ^C
+ncsim> exit
+TOOL:	ncverilog	10.20-s073: Exiting on Mar 03, 2017 at 19:19:16 CST  (total: 00:00:36)
