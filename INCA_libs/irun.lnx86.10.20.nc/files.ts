@@ -1,4 +1,0 @@
-1488586801 /home/grads/a/amarnathmhn/interviewPrep/Systemverilog_Assertions/concurrent_assertions.sv
-1488586462 /home/grads/a/amarnathmhn/interviewPrep/Systemverilog_Assertions/concurrent_assertions_delay_range.sv
-1488589505 /home/grads/a/amarnathmhn/interviewPrep/Systemverilog_Assertions/concurrent_assertions_formal_arguments.sv
-1488590317 /home/grads/a/amarnathmhn/interviewPrep/Systemverilog_Assertions/concurrent_assertions_bind_property.sv
